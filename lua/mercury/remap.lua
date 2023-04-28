@@ -26,6 +26,8 @@ vim.keymap.set("n", "<leader>co", function()
     vim.cmd("lua ColorMyPencils()")
 end)
 
+vim.keymap.set("i", "<C-L>", "console.log('')");
+
 
 
 
