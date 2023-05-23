@@ -11,10 +11,17 @@ lsp.ensure_installed ({
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
 local cmp_mappings = lsp.defaults.cmp_mappings({
-	['<C-1>'] = cmp.mapping.select_prev_item(cmp.select),
-	['<C-2>'] = cmp.mapping.select_prev_item(cmp.select),
-	['<C-3>'] = cmp.mapping.confirm({select = true}),
-	["<C-space>"] = cmp.mapping.complete(),
+	['<A-n>'] = cmp.mapping.select_prev_item(cmp.select),
+	['<A-m>'] = cmp.mapping.select_prev_item(cmp.select),
+	['<A-,>'] = cmp.mapping.confirm({select = true}),
+	["<A-.>"] = cmp.mapping.complete(),
+})
+
+cmp_mappings['<Tab>'] = nil
+cmp_mappings['<S-Tab>'] = nil
+
+lsp.setup_nvim_cmp({
+    mapping = cmp_mappings
 })
 
 lsp.on_attach(function(client, bufnr)
@@ -25,5 +32,9 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
+
+vim.diagnostic.config({
+    virtual_text = true
+})
 	
 	

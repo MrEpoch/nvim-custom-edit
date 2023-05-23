@@ -112,6 +112,7 @@ return require('packer').startup(function(use)
          {"nvim-treesitter/nvim-treesitter"}
      }
  })
-
+    
+    use("gbprod/yanky.nvim")
 end)
 
