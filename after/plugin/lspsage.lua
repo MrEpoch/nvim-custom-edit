@@ -12,14 +12,14 @@ keymap({"n","v"}, "<leader>ca", "<cmd>Lspsaga code_action<CR>")
 keymap("n", "<leader>gr", "<cmd>Lspsaga rename<CR>")
 
 -- Rename all occurrences of the hovered word for the selected files
-keymap("n", "<leader>gr", "<cmd>Lspsaga rename ++project<CR>")
 
 -- Peek definition
 -- You can edit the file containing the definition in the floating window
 -- It also supports open/vsplit/etc operations, do refer to "definition_action_keys"
 -- It also supports tagstack
 -- Use <C-t> to jump back
-keymap("n", "<leader>gp", "<cmd>Lspsaga peek_definition<CR>")
+
+keymap("n", "<leader>gp", "<cmd>Lspsaga preview_definition<CR>")
 
 -- Go to definition
 keymap("n","<leader>gd", "<cmd>Lspsaga goto_definition<CR>")
