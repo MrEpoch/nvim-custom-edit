@@ -53,7 +53,7 @@ return require('packer').startup(function(use)
 	 {'rafamadriz/friendly-snippets'}, -- Optional
   }
  }
- use ('github/copilot.vim')
+ -- use ('github/copilot.vim')
  use('KabbAmine/vCoolor.vim')
  use('mattn/emmet-vim')
  use {
@@ -123,5 +123,15 @@ return require('packer').startup(function(use)
   -- Adds extra functionality over rust analyzer
   use("simrat39/rust-tools.nvim")   
 
-    use("gbprod/yanky.nvim")
+  use("gbprod/yanky.nvim")
+
+  use("othree/html5.vim")
+  use("pangloss/vim-javascript")
+  use("evanleck/vim-svelte")
+  use("leafgarland/typescript-vim")
+  use("styled-components/vim-styled-components")
+  use("peitalin/vim-jsx-typescript")
+  use("catppuccin/nvim")
+  use("Exafunction/codeium.vim")
+
 end)

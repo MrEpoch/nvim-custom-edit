@@ -25,3 +25,5 @@ vim.keymap.set("n", "<A-1>", "<cmd>lua vim.lsp.buf.code_action() <CR>")
 
 vim.keymap.set("v", "<C-y>", "\"+y")
 
+
+

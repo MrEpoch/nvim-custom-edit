@@ -7,7 +7,7 @@ keymap("n", "gh", "<cmd>Lspsaga lsp_finder<CR>")
 
 -- Code action 
 keymap({"n","v"}, "<leader>ca", "<cmd>Lspsaga code_action<CR>")
-
+keymap('n', 'K', '<Cmd>Lspsaga hover_doc<CR>', opts)
 -- Rename all occurrences of the hovered word for the entire file
 keymap("n", "<leader>gr", "<cmd>Lspsaga rename<CR>")
 
