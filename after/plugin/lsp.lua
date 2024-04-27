@@ -2,10 +2,13 @@ local lsp = require("lsp-zero")
 
 lsp.preset("recommended")
 
+-- I installed tsserver globally
+
 lsp.ensure_installed ({
-	'tsserver',
 	'eslint',
 	'rust_analyzer',
+  'tsserver',
+  'tailwindcss',
   })
 
 local cmp = require('cmp')

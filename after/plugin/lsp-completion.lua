@@ -8,8 +8,6 @@ vim.o.completeopt = "menuone,noinsert,noselect"
 -- Avoid showing extra messages when using completion
 vim.opt.shortmess = vim.opt.shortmess + "c"
 
-
-
 -- Configure LSP through rust-tools.nvim plugin.
 -- rust-tools will configure and enable certain LSP features for us.
 -- See https://github.com/simrat39/rust-tools.nvim#configuration
