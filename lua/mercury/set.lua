@@ -33,8 +33,3 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     vim.highlight.on_yank()
   end,
 })
-
-
-color = color or 'carbonfox'
-vim.cmd.colorscheme(color)
-
